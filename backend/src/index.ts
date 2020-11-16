@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 
 app.use("/api", routes);
 
-app.listen(5000, () => {
+app.listen(3000, () => {
   console.log("Server has started on http://it2810-67.idi.ntnu.no:3000/api/");
 });
 //# sourceMappingURL=connection.js.map
