@@ -43,9 +43,9 @@ router.get("/posts", async (req, res) => {
   } else if (req.query.sort === "yearsDESC") {
     sortData = { year: -1, name: 1 };
   } else if (req.query.sort === "titleDESC") {
-    sortData = { name: 1, year: -1 };
-  } else if (req.query.sort === "titleASC") {
     sortData = { name: -1, year: -1 };
+  } else if (req.query.sort === "titleASC") {
+    sortData = { name: 1, year: -1 };
   }
   try {
     const posts = await Music.find(
